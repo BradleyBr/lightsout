@@ -1,0 +1,15 @@
+html {
+  font-size: 16px;
+}
+
+#squarerow {
+  display: flex;
+}
+
+.square {
+  background-color: skyblue;
+  border: 1px solid green;
+  margin: 0.5rem 0.5rem;
+  width: 100px;
+  height: 100px;
+}
