@@ -28,62 +28,70 @@ lightsOut.renderGame = function($game) {
   var $gameSquare8 = $('<div class="square sq8"></div>');
   var $gameSquare9 = $('<div class="square sq9"></div>');
 
-  $gameSquare1.data("state", false);
-  $gameSquare2.data("state", false);
-  $gameSquare3.data("state", false);
-  $gameSquare4.data("state", false);
-  $gameSquare5.data("state", false);
-  $gameSquare6.data("state", false);
-  $gameSquare7.data("state", false);
-  $gameSquare8.data("state", false);
-  $gameSquare9.data("state", false);
+// to create a random board on page load, using Math.random for the state attribute
+  var randState = function() {
+      if (Math.floor(Math.random()*2) === 0) {
+        return true;
+      } else {
+        return false;
+      };
+  };
+  $gameSquare1.data("state", randState());
+  $gameSquare2.data("state", randState());
+  $gameSquare3.data("state", randState());
+  $gameSquare4.data("state", randState());
+  $gameSquare5.data("state", randState());
+  $gameSquare6.data("state", randState());
+  $gameSquare7.data("state", randState());
+  $gameSquare8.data("state", randState());
+  $gameSquare9.data("state", randState());
 
 
   // block of code for setting the state of each square
   if ($gameSquare1.data("state") === false) {
-    $gameSquare1.css('background-color', 'red');
+    $gameSquare1.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare1.css('background-color', 'green');
+    $gameSquare1.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare2.data("state") === false) {
-    $gameSquare2.css('background-color', 'red');
+    $gameSquare2.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare2.css('background-color', 'green');
+    $gameSquare2.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare3.data("state") === false) {
-    $gameSquare3.css('background-color', 'red');
+    $gameSquare3.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare3.css('background-color', 'green');
+    $gameSquare3.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare4.data("state") === false) {
-    $gameSquare4.css('background-color', 'red');
+    $gameSquare4.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare4.css('background-color', 'green');
+    $gameSquare4.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare5.data("state") === false) {
-    $gameSquare5.css('background-color', 'red');
+    $gameSquare5.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare5.css('background-color', 'green');
+    $gameSquare5.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare6.data("state") === false) {
-    $gameSquare6.css('background-color', 'red');
+    $gameSquare6.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare6.css('background-color', 'green');
+    $gameSquare6.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare7.data("state") === false) {
-    $gameSquare7.css('background-color', 'red');
+    $gameSquare7.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare7.css('background-color', 'green');
+    $gameSquare7.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare8.data("state") === false) {
-    $gameSquare8.css('background-color', 'red');
+    $gameSquare8.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare8.css('background-color', 'green');
+    $gameSquare8.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare9.data("state") === false) {
-    $gameSquare9.css('background-color', 'red');
+    $gameSquare9.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare9.css('background-color', 'green');
+    $gameSquare9.css('background-color', 'rgb(63, 210, 255)');
   };
 
 
@@ -111,50 +119,21 @@ lightsOut.renderGame = function($game) {
     }
   // necessary block of code for the squares to render the change in css
   if ($gameSquare1.data("state") === false) {
-    $gameSquare1.css('background-color', 'red');
+    $gameSquare1.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare1.css('background-color', 'green');
+    $gameSquare1.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare2.data("state") === false) {
-    $gameSquare2.css('background-color', 'red');
+    $gameSquare2.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare2.css('background-color', 'green');
-  };
-  if ($gameSquare3.data("state") === false) {
-    $gameSquare3.css('background-color', 'red');
-  } else {
-    $gameSquare3.css('background-color', 'green');
+    $gameSquare2.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare4.data("state") === false) {
-    $gameSquare4.css('background-color', 'red');
+    $gameSquare4.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare4.css('background-color', 'green');
+    $gameSquare4.css('background-color', 'rgb(63, 210, 255)');
   };
-  if ($gameSquare5.data("state") === false) {
-    $gameSquare5.css('background-color', 'red');
-  } else {
-    $gameSquare5.css('background-color', 'green');
-  };
-  if ($gameSquare6.data("state") === false) {
-    $gameSquare6.css('background-color', 'red');
-  } else {
-    $gameSquare6.css('background-color', 'green');
-  };
-  if ($gameSquare7.data("state") === false) {
-    $gameSquare7.css('background-color', 'red');
-  } else {
-    $gameSquare7.css('background-color', 'green');
-  };
-  if ($gameSquare8.data("state") === false) {
-    $gameSquare8.css('background-color', 'red');
-  } else {
-    $gameSquare8.css('background-color', 'green');
-  };
-  if ($gameSquare9.data("state") === false) {
-    $gameSquare9.css('background-color', 'red');
-  } else {
-    $gameSquare9.css('background-color', 'green');
-  };
+  // win condition on click, delay set for the alert to come after squares change color
   if (($gameSquare1.data('state') === true) && ($gameSquare2.data('state') === true)
   && ($gameSquare3.data('state') === true) && ($gameSquare4.data('state') === true) &&
   ($gameSquare5.data('state') === true) && ($gameSquare6.data('state') === true) &&
@@ -187,25 +166,26 @@ $gameSquare2.click(function() {
   };
   // rendering css state change
   if ($gameSquare1.data("state") === false) {
-    $gameSquare1.css('background-color', 'red');
+    $gameSquare1.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare1.css('background-color', 'green');
+    $gameSquare1.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare2.data("state") === false) {
-    $gameSquare2.css('background-color', 'red');
+    $gameSquare2.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare2.css('background-color', 'green');
+    $gameSquare2.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare3.data("state") === false) {
-    $gameSquare3.css('background-color', 'red');
+    $gameSquare3.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare3.css('background-color', 'green');
+    $gameSquare3.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare5.data("state") === false) {
-    $gameSquare5.css('background-color', 'red');
+    $gameSquare5.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare5.css('background-color', 'green');
+    $gameSquare5.css('background-color', 'rgb(63, 210, 255)');
   };
+  // win condition on click, delay set for the alert to come after squares change color
   if (($gameSquare1.data('state') === true) && ($gameSquare2.data('state') === true)
   && ($gameSquare3.data('state') === true) && ($gameSquare4.data('state') === true) &&
   ($gameSquare5.data('state') === true) && ($gameSquare6.data('state') === true) &&
@@ -233,20 +213,21 @@ $gameSquare3.click(function() {
   };
   // rendering css state change
   if ($gameSquare2.data("state") === false) {
-    $gameSquare2.css('background-color', 'red');
+    $gameSquare2.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare2.css('background-color', 'green');
+    $gameSquare2.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare3.data("state") === false) {
-    $gameSquare3.css('background-color', 'red');
+    $gameSquare3.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare3.css('background-color', 'green');
+    $gameSquare3.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare6.data("state") === false) {
-    $gameSquare6.css('background-color', 'red');
+    $gameSquare6.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare6.css('background-color', 'green');
+    $gameSquare6.css('background-color', 'rgb(63, 210, 255)');
   };
+  // win condition on click, delay set for the alert to come after squares change color
   if (($gameSquare1.data('state') === true) && ($gameSquare2.data('state') === true)
   && ($gameSquare3.data('state') === true) && ($gameSquare4.data('state') === true) &&
   ($gameSquare5.data('state') === true) && ($gameSquare6.data('state') === true) &&
@@ -279,25 +260,26 @@ $gameSquare4.click(function() {
   };
   // rendering css state change
   if ($gameSquare1.data("state") === false) {
-    $gameSquare1.css('background-color', 'red');
+    $gameSquare1.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare1.css('background-color', 'green');
+    $gameSquare1.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare4.data("state") === false) {
-    $gameSquare4.css('background-color', 'red');
+    $gameSquare4.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare4.css('background-color', 'green');
+    $gameSquare4.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare5.data("state") === false) {
-    $gameSquare5.css('background-color', 'red');
+    $gameSquare5.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare5.css('background-color', 'green');
+    $gameSquare5.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare7.data("state") === false) {
-    $gameSquare7.css('background-color', 'red');
+    $gameSquare7.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare7.css('background-color', 'green');
+    $gameSquare7.css('background-color', 'rgb(63, 210, 255)');
   };
+  // win condition on click, delay set for the alert to come after squares change color
   if (($gameSquare1.data('state') === true) && ($gameSquare2.data('state') === true)
   && ($gameSquare3.data('state') === true) && ($gameSquare4.data('state') === true) &&
   ($gameSquare5.data('state') === true) && ($gameSquare6.data('state') === true) &&
@@ -335,30 +317,31 @@ $gameSquare5.click(function() {
   };
   // rendering css state change
   if ($gameSquare2.data("state") === false) {
-    $gameSquare2.css('background-color', 'red');
+    $gameSquare2.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare2.css('background-color', 'green');
+    $gameSquare2.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare4.data("state") === false) {
-    $gameSquare4.css('background-color', 'red');
+    $gameSquare4.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare4.css('background-color', 'green');
+    $gameSquare4.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare5.data("state") === false) {
-    $gameSquare5.css('background-color', 'red');
+    $gameSquare5.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare5.css('background-color', 'green');
+    $gameSquare5.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare6.data("state") === false) {
-    $gameSquare6.css('background-color', 'red');
+    $gameSquare6.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare6.css('background-color', 'green');
+    $gameSquare6.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare8.data("state") === false) {
-    $gameSquare8.css('background-color', 'red');
+    $gameSquare8.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare8.css('background-color', 'green');
+    $gameSquare8.css('background-color', 'rgb(63, 210, 255)');
   };
+  // win condition on click, delay set for the alert to come after squares change color
   if (($gameSquare1.data('state') === true) && ($gameSquare2.data('state') === true)
   && ($gameSquare3.data('state') === true) && ($gameSquare4.data('state') === true) &&
   ($gameSquare5.data('state') === true) && ($gameSquare6.data('state') === true) &&
@@ -391,25 +374,26 @@ $gameSquare6.click(function() {
   };
   // rendering css state change
   if ($gameSquare3.data("state") === false) {
-    $gameSquare3.css('background-color', 'red');
+    $gameSquare3.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare3.css('background-color', 'green');
+    $gameSquare3.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare5.data("state") === false) {
-    $gameSquare5.css('background-color', 'red');
+    $gameSquare5.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare5.css('background-color', 'green');
+    $gameSquare5.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare6.data("state") === false) {
-    $gameSquare6.css('background-color', 'red');
+    $gameSquare6.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare6.css('background-color', 'green');
+    $gameSquare6.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare9.data("state") === false) {
-    $gameSquare9.css('background-color', 'red');
+    $gameSquare9.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare9.css('background-color', 'green');
+    $gameSquare9.css('background-color', 'rgb(63, 210, 255)');
   };
+  // win condition on click, delay set for the alert to come after squares change color
   if (($gameSquare1.data('state') === true) && ($gameSquare2.data('state') === true)
   && ($gameSquare3.data('state') === true) && ($gameSquare4.data('state') === true) &&
   ($gameSquare5.data('state') === true) && ($gameSquare6.data('state') === true) &&
@@ -437,20 +421,21 @@ $gameSquare7.click(function() {
   };
   // rendering css state change
   if ($gameSquare4.data("state") === false) {
-    $gameSquare4.css('background-color', 'red');
+    $gameSquare4.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare4.css('background-color', 'green');
+    $gameSquare4.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare7.data("state") === false) {
-    $gameSquare7.css('background-color', 'red');
+    $gameSquare7.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare7.css('background-color', 'green');
+    $gameSquare7.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare8.data("state") === false) {
-    $gameSquare8.css('background-color', 'red');
+    $gameSquare8.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare8.css('background-color', 'green');
+    $gameSquare8.css('background-color', 'rgb(63, 210, 255)');
   };
+  // win condition on click, delay set for the alert to come after squares change color
   if (($gameSquare1.data('state') === true) && ($gameSquare2.data('state') === true)
   && ($gameSquare3.data('state') === true) && ($gameSquare4.data('state') === true) &&
   ($gameSquare5.data('state') === true) && ($gameSquare6.data('state') === true) &&
@@ -483,25 +468,26 @@ $gameSquare8.click(function() {
   };
   // css render state change
   if ($gameSquare5.data("state") === false) {
-    $gameSquare5.css('background-color', 'red');
+    $gameSquare5.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare5.css('background-color', 'green');
+    $gameSquare5.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare7.data("state") === false) {
-    $gameSquare7.css('background-color', 'red');
+    $gameSquare7.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare7.css('background-color', 'green');
+    $gameSquare7.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare8.data("state") === false) {
-    $gameSquare8.css('background-color', 'red');
+    $gameSquare8.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare8.css('background-color', 'green');
+    $gameSquare8.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare9.data("state") === false) {
-    $gameSquare9.css('background-color', 'red');
+    $gameSquare9.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare9.css('background-color', 'green');
+    $gameSquare9.css('background-color', 'rgb(63, 210, 255)');
   };
+  // win condition on click, delay set for the alert to come after squares change color
   if (($gameSquare1.data('state') === true) && ($gameSquare2.data('state') === true)
   && ($gameSquare3.data('state') === true) && ($gameSquare4.data('state') === true) &&
   ($gameSquare5.data('state') === true) && ($gameSquare6.data('state') === true) &&
@@ -529,20 +515,21 @@ $gameSquare9.click(function() {
   };
   // css render state change
   if ($gameSquare6.data("state") === false) {
-    $gameSquare6.css('background-color', 'red');
+    $gameSquare6.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare6.css('background-color', 'green');
+    $gameSquare6.css('background-color', 'rgb(63, 210, 255)');
     };
   if ($gameSquare8.data("state") === false) {
-    $gameSquare8.css('background-color', 'red');
+    $gameSquare8.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare8.css('background-color', 'green');
+    $gameSquare8.css('background-color', 'rgb(63, 210, 255)');
   };
   if ($gameSquare9.data("state") === false) {
-    $gameSquare9.css('background-color', 'red');
+    $gameSquare9.css('background-color', 'rgb(14, 44, 66)');
   } else {
-    $gameSquare9.css('background-color', 'green');
+    $gameSquare9.css('background-color', 'rgb(63, 210, 255)');
   };
+  // win condition on click, delay set for the alert to come after squares change color
   if (($gameSquare1.data('state') === true) && ($gameSquare2.data('state') === true) &&
   ($gameSquare3.data('state') === true) && ($gameSquare4.data('state') === true) &&
   ($gameSquare5.data('state') === true) && ($gameSquare6.data('state') === true) &&
